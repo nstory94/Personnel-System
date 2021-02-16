@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nStory.newEpmWindowController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="701.0">
+            <children>
+                <Button fx:id="saveEmp" layoutX="262.0" layoutY="522.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="73.0" text="Save" />
+                <Label alignment="CENTER" layoutX="154.0" layoutY="125.0" prefHeight="17.0" prefWidth="108.0" text="Manager:">
+                    <font>
+                        <Font name="Times New Roman" size="18.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="managers" layoutX="271.0" layoutY="121.0" prefHeight="25.0" prefWidth="319.0" />
+                <TextField fx:id="empIDField" layoutX="271.0" layoutY="242.0" prefHeight="25.0" prefWidth="283.0" />
+                <TextField fx:id="fNameField" layoutX="271.0" layoutY="288.0" prefHeight="25.0" prefWidth="283.0" />
+                <TextField fx:id="lNameField" layoutX="271.0" layoutY="334.0" prefHeight="25.0" prefWidth="283.0" />
+                <Label layoutX="189.0" layoutY="338.0" prefHeight="17.0" prefWidth="73.0" text="Last Name: " />
+                <Label layoutX="190.0" layoutY="292.0" prefHeight="17.0" prefWidth="73.0" text="First Name: " />
+                <Label layoutX="186.0" layoutY="246.0" text="Employee ID: " />
+                <ListView fx:id="roleField" layoutX="271.0" layoutY="387.0" prefHeight="91.0" prefWidth="283.0" />
+                <Label alignment="TOP_RIGHT" layoutX="178.0" layoutY="387.0" prefHeight="17.0" prefWidth="73.0" text="Roles: " />
+                <Button fx:id="cancelAdd" layoutX="405.0" layoutY="522.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Cancel" onAction="#handleButtonAction" />
+                <Label layoutX="233.0" layoutY="22.0" text="Add New Employee">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
+
